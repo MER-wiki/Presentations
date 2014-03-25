@@ -1,0 +1,217 @@
+\documentclass{beamer}
+%\documentclass[handout]{beamer}
+
+\usepackage{color}
+\usepackage[thicklines]{cancel}
+
+
+\renewcommand{\CancelColor}{\color{red}}
+
+%This removes an error message.
+\let\Tiny=\tiny
+
+\newcommand{\bF}{{\mathbb{F}}}
+\newcommand{\bQ}{{\mathbb{Q}}}
+\newcommand{\bZ}{{\mathbb{Z}}}
+
+\renewcommand{\P}{{\mathcal{P}}}
+
+\newcommand{\tor}{\textnormal{tor}}
+
+\renewcommand{\mod}[1]{{\ifmmode\text{\rm\ (mod~$#1$)}\else\discretionary{}{}{\hbox{ }}\rm(mod~$#1$)\fi}}
+\newcommand{\legendre}[2]{\genfrac{(}{)}{}{}{#1}{#2}}
+
+%try beamerthemebars or beamerthemeclassic
+\usepackage{beamerthemesplit}
+\usetheme{boxes}
+%\usepackage{beamertemplates}
+\setbeamertemplate{navigation symbols}{}
+
+\title[The Math Exam Resource Wiki]{The Math \xcancel{Exam} Educational Resources Wiki \\ BC Open Open Ed Chats}
+\author{Bernhard Konrad, Christina Koch, Carmen Bruni, Iain Moyles, Will Thompson and the entire MER wiki team
+\newline
+\small \it mer-wiki@math.ubc.ca}
+\institute{The University of British Columbia}
+%\date{February 6th, 2014}
+
+\date{February 14th, 2014 \\
+\includegraphics[scale=0.4]{David_Webster.jpg}
+}
+
+
+
+
+\beamertemplateshadingbackground{white}{white}%{yellow!50}{magenta!50}
+
+
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+\begin{document}
+
+\frame{\titlepage}
+
+%\section[Outline]{}
+
+%\frame{\tableofcontents}
+
+%%\section[Introduction]{}
+
+%\frame{\tableofcontentscurrent}
+
+%\subsection{Introduction}
+
+\frame
+{
+  \begin{block}{Outline}
+
+      \begin{itemize}
+				\item Welcome and brief history.
+                \item Recent updates.
+				\item Current ideas and issues.
+				\item Possible future directions of the MER wiki.
+      \end{itemize}
+  \end{block}
+
+  \begin{block}{Items to ponder during the short demos}
+
+      \begin{itemize}
+				\item Is this work sustainable? How can we make it so?
+				\item How one can use this resource in class/for instructors?
+                \item How do we best align this resource with our teaching goals?
+      \end{itemize}
+  \end{block}
+
+}
+
+
+\frame
+{
+  \begin{block}{Brief history of the MER wiki}
+
+      \begin{itemize}
+                \item Math Department makes previous exams publically available.
+				\item Entirely student initiated and run, this project started \href{http://wiki.ubc.ca/index.php?title=Science:Math_Exam_Resources&oldid=139951}{20 Feb 2012.} Now, it has become \href{http://wiki.ubc.ca/Science:Math_Exam_Resources}{this!}
+
+                \item Goal: improve quality of content, system of content delivery.
+
+				\item Wiki format allows flat hirarchy, is easy for new contributors, great to work collaboratively and is intuitive to use.
+      \end{itemize}
+    \end{block}
+
+    \begin{block}{How far did we get in two years?}
+        \begin{itemize}
+            \item 39 complete exams, 954 fully written solutions with hints (and counting!) by about 35 contributors.
+
+            %\item \href{nbviewer.ipython.org/github/MER-wiki/google-analytics/blob/master/mer_py_google_analytics.ipynb}{Do students use it? Boy do they!}
+         \end{itemize}
+      \end{block}
+}
+
+\frame
+{
+    \frametitle{Student feedback}
+Do students use it? \href{http://htmlpreview.github.io/?https://github.com/MER-wiki/google-analytics/blob/master/presentations/2014-02-13_Lunch_Series/output-hidden.html}{Oh yes, they do!}
+
+\begin{itemize}
+\item ``I just wanted to express my sincere gratitude for the resources you have provided us! This first year course has certainly been a challenge for many of us, and your help really means a lot to us. Indeed, creating this resource must be a crystal of hard work, effort
+and time, that your team have contributed, for the sake of others.''
+\item ``I used the tagging system and found it to be very helpful as I could find similar types of questions that I had a difficult time with quickly (sort of like using an index in a textbook).''
+\item ``The tagging system was GREAT! It's funny because I remember seeing those tags for some topics but not the one I was looking for, so I was frustrated. Then the next day it was there! That was cool.''
+\end{itemize}
+
+}
+
+
+\frame
+{
+  \frametitle{What happened recently?}
+
+      \begin{itemize}
+            %\item Insight on usage and exam design from  \href{nbviewer.ipython.org/github/MER-wiki/google-analytics/blob/master/mer_py_google_analytics.ipynb}{google analytics}
+            \item Additional insight on usage and exam design from  \href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2010/Question_6}{the rating bar.} We can now start to rate by \href{http://wiki.ubc.ca/Sandbox:MER-rating}{difficulty.}
+            %\item Regular meetings with CTLT staff (wiki admins).
+            \item Improve the \href{http://wiki.ubc.ca/Category:MER_Tag_Linear_approximation}{tagging system} and connect it to the  \href{http://www.math.ubc.ca/~cbruni/pdfs/Math103JanApr2014/syllabus.pdf}{course syllabus}. Display syllabus on \href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103}{exam course page}.
+            %\item {\color{red} I THINK THIS WOULD TO MENTION. Math 110 pilot project.}
+            \item Embed and remix wiki content on \href{http://wordpress.org/plugins/wiki-embed/}{wordpress} and \href{http://wiki.ubc.ca/Sandbox:MER_Wiki_to_LMS}{connect}.
+            \item Grant applications to \href{http://tlef.ubc.ca/tlef-criteria/}{Teaching and Learning Enhancement Fund} and \href{http://wiki.ubc.ca/Library:Scholarly_Communications/Innovative_Dissemination_of_Research_Award}{Innovative Dissemination of Research Award}.
+
+\end{itemize}
+}
+
+
+
+
+\frame
+{
+  \frametitle{Research on worked-examples}
+
+\alert{Question:} Is this useful for students or harmful?\\
+
+      \begin{itemize}
+            \item For the sake of this presentation, let's assume that our goal is to aid students on achieving a high score on their examinations.
+            \item Research suggests that
+            \begin{enumerate}
+            \item Students who see worked examples and conventional problems versus only seeing conventional problems do better on test questions containing similar problems (Sweller-Cooper '85), (Cooper-Sweller '87), (Paas-Van Merri\"enboer '94).
+            \item Students also spend less time on worked examples than on conventional problems (S-C '85), (C-S '87), (P-V M '94).
+            \end{enumerate}
+      \end{itemize}
+}
+
+\frame
+{
+  \frametitle{Research on worked-examples}
+
+            \begin{enumerate}
+            \setcounter{enumi}{2}
+            \item Students who are in the worked example group also can perform better and spend less time on transfer problems (that is, examples not identical to the practice ones) provided the variance in difficulty is not too large (C-S '87), (P-V M '94).
+            \item Strong students are not effected by the type of practice so long as they spend ``enough time'' on task. Weak students however perform much better on tests provided they have spent enough time on worked examples  (C-S '87).
+            \end{enumerate}
+}
+
+\frame
+{
+  \frametitle{Research on worked-examples}
+
+            \begin{enumerate}
+            \setcounter{enumi}{4}
+            \item When normalized for time, students perform substantially better and are faster on transfer problems than a conventional problem group (C-S '87).
+            \item Students seeing worked examples on problems of large variability will in general perform better on transfer tests (P-V M '94). \pause
+            \end{enumerate}
+
+          \alert{Summary: Students need to develop schemata for organizing problems which can be faciliated by worked examples.}
+}
+
+\frame
+{
+  \frametitle{Where do we want to take this?}
+
+\alert{MER wiki's vision:}
+\begin{itemize}
+\item Make this the best resource possible for undergraduate students at UBC.
+
+\item Be role model for similar initiatives.
+\end{itemize}
+
+\begin{block}{Possible future directions}
+      \begin{itemize}
+            \item Add non-exam questions and ``fill in the details'' solutions. %Eg integrate open textbooks, advertise for tutors, MLC hours.
+            \item Add more features, eg. reasonable marking scheme.
+            \item Tie to other open education resources.
+            \item Course integration: Invite students to contribute. Eg.\ explain a concept and post on tag pages.
+            \item Make an instructor's life easier.
+            \item \alert{Become sustainable.}
+            %\item Tie to UBC \href{http://strategicplan.ubc.ca/}{mission and goals}.
+        \end{itemize}
+\end{block}
+
+}
+
+
+
+%\begin{frame}
+%\frametitle{Cryptography Scheme}
+%Here is another slide.
+%\end{frame}
+
+\end{document}
+
+%sagemathcloud={"zoom_width":105}
